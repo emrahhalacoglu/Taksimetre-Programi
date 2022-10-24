@@ -9,8 +9,7 @@ public class Code {
         System.out.print("Mesafe Giriniz :");
         mesafe=input.nextDouble();
         taksimetreTurari=baslangicTutari+mesafe*kilometreTutari;
-        boolean k1=(taksimetreTurari<=20);
-        taksimetreTurari=k1?minimumOdeme:taksimetreTurari;
+        taksimetreTurari=(taksimetreTurari<20)?minimumOdeme:taksimetreTurari;
         System.out.println("Taksimetre Tutari :"+taksimetreTurari+" TL");
     }
     
